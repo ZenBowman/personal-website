@@ -21,6 +21,7 @@ def setup_target():
     if os.path.isdir("target"):
         shutil.rmtree("target")
     os.mkdir("target")
+    shutil.copytree("pictures", "target/pictures")
 
 if __name__ == "__main__":
     setup_target()
