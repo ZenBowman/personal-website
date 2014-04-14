@@ -12,8 +12,8 @@ def process(fn):
             includer.close()
         else:
             output.write(line)
-            if (not line.strip().startswith("<")):
-                output.write("<br/>")
+            #if (not line.strip().startswith("<")):
+            #    output.write("<br/>")
     input.close()
     output.close()
 
